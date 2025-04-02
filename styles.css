@@ -1,0 +1,598 @@
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+}
+
+.divider {
+    display: inline-block;
+    width: 2px; /* Gaano kakapal ang divider */
+    height: 35px; /* Gaano kahaba ang divider */
+    background-color: white; /* Kulay ng divider */
+    margin: 0 10px; /* Espasyo sa kaliwa't kanan */
+  }
+
+/* Default navbar settings */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Para manatili sa ibabaw ng ibang elements */
+}
+  
+.navbar.bg-dark {
+    background-color: #000080 !important;
+}
+
+/* Default light mode styles */
+.navbar-nav .nav-link {
+    position: relative;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00FFFF;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00FFFF !important;
+}
+
+.navbar-brand img {
+    height: 30px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.nav-btn {
+    padding: 6px 18px;
+    margin-right: 12px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.nav-btn.active {
+    background-color: #ffffff;
+    color: #0d6efd !important;
+    border-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*new*/
+.centered-text {
+    display: flex;
+    font-family: arial;
+    font-weight: bold;
+    font-size: large;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    color: white;
+}
+
+/* Target TRAINING COURSES Title Inside Its Specific Container */
+.training-courses-section .training-courses-title {
+    text-align: center;
+    
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 45px;
+    padding-bottom: 45px;
+  }
+  
+
+
+
+/* Training Courses Title */
+.training-courses-title {
+    font-family: 'Poppins', sans-serif; /* Modern and clean font */
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+
+/* Flip Card Design */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 280px;
+    perspective: 1000px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* Flip Card Front Design */
+.flip-card-front {
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Mas magandang spacing sa image at text */
+    padding: 20px; /* Para hindi dikit ang laman sa gilid */
+}
+
+/* Flip Card Image */
+.flip-card-front img {
+    width: 130px; /* Medyo lumiit para hindi masyadong lapit sa text */
+    height: 130px;
+    border-radius: 50%; /* Siguradong bilog ang image */
+    border: 2px solid white; /* Medyo mas makapal para kita */
+    object-fit: cover; /* Hindi distorted ang image */
+    align-self: center; /* Siguradong nasa gitna */
+}
+
+/* Flip Card Text */
+.flip-card-front h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Flip Card Back Design */
+.flip-card-back {
+    background: #ffffff;
+    color: black;
+    transform: rotateY(180deg);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Button */
+.custom-btn {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.custom-btn:hover {
+    background: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Container for center alignment */
+.course-inclusions-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Course Inclusions Card */
+.course-inclusions {
+    background: #f8f9fa; /* Light mode */
+    color: #212529;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+
+.course-inclusions ul li {
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+/* Training Note */
+.training-note {
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 30px;
+    border-radius: 8px;
+    
+}
+
+
+
+
+/* Featurette Styling */
+.featurette-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-light);
+    transition: color 0.3s;
+}
+
+.featurette p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    transition: color 0.3s;
+}
+
+/* Image Styling */
+.featurette-image {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.featurette-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+/* Footer Styling */
+.custom-footer {
+    background: #000080;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: auto; /* Para laging nasa ilalim */
+}
+
+/* Para maiwasan ang extra space */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center; /* Para pantay ang height */
+    padding: 0 15px;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 10px; /* Bawasan ang space */
+    padding: 10px; /* Para hindi dikit-dikit */
+}
+
+/* Title Styling */
+.footer-section h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Text Styling */
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.4; /* Bawasan ang taas ng linya */
+    margin: 0; /* Alisin ang extra space */
+}
+
+/* Links Styling */
+.footer-section a {
+    color: #f8f9fa;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+/* Hover Effect */
+.footer-section a:hover {
+    color: #00bfff;
+}
+
+/* Social Icons */
+.social-icon {
+    width: 35px;
+    height: auto;
+    transition: 0.3s;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Icon Hover */
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0; /* Bawasan ang padding */
+    font-size: 14px;
+    margin-top: 10px; /* Para hindi masyadong dikit */
+}
+
+
+/* Modal Customization */
+.modal-dialog {
+    max-width: 800px;
+}
+
+/* Modal Content - Rounded Corners at Shadow */
+.modal-content {
+  border-radius: 15px; /* Medyo bilugan ang gilid */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Modal Header - Custom Background */
+.modal-header {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border-top-left-radius: 15px; /* Bilugan ang upper corners */
+  border-top-right-radius: 15px;
+}
+
+/* Modal Title - Centered */
+.modal-title {
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1; /* Para sentro */
+}
+
+/* Close Button - White */
+.modal-header .btn-close {
+  filter: invert(1); /* Ginawang white ang close button */
+}
+
+/* Image Styling - Soft Border & Shadow */
+.modal-body img {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* Ensure Full Height Layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Wrapper */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full screen height */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1; /* Pushes footer to bottom */
+}
+
+
+/* ========== DARK MODE SUPPORT ========== */
+[data-bs-theme="dark"] .navbar {
+    background-color: #00004d !important; /* Mas madilim na navbar sa dark mode */
+}
+
+[data-bs-theme="dark"] .navbar-nav .nav-link {
+    color: #d1d1d1 !important; /* Mas light gray na text sa dark mode */
+}
+
+[data-bs-theme="dark"] .navbar-nav .nav-link:hover {
+    color: #00FFFF !important;
+}
+
+[data-bs-theme="dark"] .nav-btn.active {
+    background-color: #363636 !important; /* Cyan background */
+    color: #000000 !important; /* Black text para readable */
+    font-weight: bold;
+}
+
+[data-bs-theme="dark"] .navbar-nav .nav-link::after {
+    background-color: #00FFFF; /* Cyan underline sa dark mode */
+}
+
+[data-bs-theme="dark"] .navbar-brand img {
+    filter: brightness(0.8); /* Konting dim sa logo kung may white elements */
+}
+
+
+/* Dark mode support */
+[data-bs-theme="dark"] .course-inclusions {
+    background: #2c2c2c;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Dark mode for Training Note */
+[data-bs-theme="dark"] .training-note {
+    color: #ffb3b3;
+}
+
+/* Dark Mode Support */
+:root {
+    --h1-light-color: #000;  /* Light Mode h1 */
+    --h1-dark-color: #d1d1d1; /* Dark Mode h1 */
+}
+
+[data-bs-theme="light"] .training-courses-title {
+    color: var(--h1-light-color);
+}
+
+[data-bs-theme="dark"] .training-courses-title {
+    color: var(--h1-dark-color);
+}
+
+/* Dark Mode Styling */
+[data-bs-theme="dark"] body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .featurette-heading {
+    color: #ffffff;
+}
+
+[data-bs-theme="dark"] .featurette p.lead {
+    color: #d1d1d1;
+}
+
+[data-bs-theme="dark"] .featurette-divider {
+    border-top: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+[data-bs-theme="dark"] .navbar.bg-dark {
+    background-color: #00004d !important;
+}
+
+[data-bs-theme="dark"] .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+[data-bs-theme="dark"] .navbar-nav .nav-link:hover {
+    color: #00FFFF !important;
+}
+
+[data-bs-theme="dark"] .featurette-image {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+  
+  

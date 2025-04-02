@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <script src="../assets/js/color-modes.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.122.0">
+  <title>Apex Engineering Services (AES)</title>
+
+  <!--Intact bootstrap-->
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <!-- Custom styles main template -->
+  <link href="carousel.css" rel="stylesheet">
+
+  <!-- Own CSS-->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+
+<body>
+
+
+
+  <div class="main-wrapper">
+    <div class="main-content">
+
+
+      <!-- Navbar part -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <img src="logos/aeslogo.png" alt="Logo" style="height: 40px; margin-right: 10px;">
+          <div class="centered-text">
+            <span>APEX ENGINEERING SERVICES (AES)</span>
+            <span>EST. 2005</span>
+          </div>
+
+          <!-- Navbar toggler for mobile responsiveness -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Home Button with Address and Email -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link nav-btn active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <span class="nav-link text-white">|</span>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link text-white"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=contacts.apex@gmail.com" target="_blank">✉️ Email
+                  Us</a>
+              </li>
+              <li class="nav-item d-none d-md-block">
+                <span class="nav-link text-white">|</span>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#addressModal">
+                  📍Address Details
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End of Navbar -->
+
+
+      <main>
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+          <!-- Indicators (Bilog na buttons) -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img src="carouselSlides/slide1.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img src="carouselSlides/slide2.png" class="d-block w-100" alt="Slide 2">
+              <div class="carousel-caption">
+                <a class="btn btn-lg btn-primary" href="#" target="_blank">Sign up today</a>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img src="carouselSlides/slide3.png" class="d-block w-100" alt="Slide 3">
+              <div class="carousel-caption">
+                <p><a class="btn btn-lg btn-primary" href="gallery.html">Browse gallery</a></p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+
+      </main>
+
+
+      <div class="training-courses-section">
+        <!-- Courses Displayed as Flipcard-->
+        <h1 class="training-courses-title">TRAINING COURSES</h1>
+      </div>
+
+      <div class="container marketing">
+        <div class="row justify-content-center">
+
+          <!-- Flip Card 1 -->
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="courses/bndt.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    alt="Image">
+                  <h4 class="fw-normal">Basic Nondestructive Testing</h4>
+                </div>
+                <div class="flip-card-back">
+                  <p>A set of inspection techniques used to evaluate the integrity of materials and structures without
+                    causing damage.</p>
+                  <button class="custom-btn" data-bs-toggle="modal" data-bs-target="#modal1">View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flip Card 2 -->
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="courses/mt-pic.JPG" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    alt="Image">
+                  <h4 class="fw-normal justify-text">Magnetic Particle Testing & <br>Liquid Penetrant Testing</h4>
+                </div>
+                <div class="flip-card-back">
+                  <p>Surface inspection methods where MT uses magnetic fields and iron particles for detecting flaws in
+                    ferromagnetic materials, while PT applies liquid dye to reveal cracks through capillary action.</p>
+                  <button class="custom-btn" data-bs-toggle="modal" data-bs-target="#modal2">View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flip Card 3 -->
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="courses/ut.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    alt="Image">
+                  <h4 class="fw-normal">Ultrasonic Testing</h4>
+                </div>
+                <div class="flip-card-back">
+                  <p>A method that utilizes high-frequency sound waves to detect internal flaws in materials by
+                    analyzing wave reflections.</p>
+                  <button class="custom-btn" data-bs-toggle="modal" data-bs-target="#modal3">View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flip Card 4 -->
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="courses/rt.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    alt="Image">
+                  <h4 class="fw-normal">Radiographic Testing</h4>
+                </div>
+                <div class="flip-card-back">
+                  <p>An inspection technique that uses X-rays or gamma rays to penetrate materials and reveal internal
+                    defects on film or digital detectors.</p>
+                  <button class="custom-btn" data-bs-toggle="modal" data-bs-target="#modal4">View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flip Card 5 -->
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="courses/rtfi.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140"
+                    alt="Image">
+                  <h4 class="fw-normal">RT Film Interpretation</h4>
+                </div>
+                <div class="flip-card-back">
+                  <p>The process of analyzing radiographic images to identify and assess defects in materials based on
+                    contrast, density, and shape.</p>
+                  <button class="custom-btn" data-bs-toggle="modal" data-bs-target="#modal5">View Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Additional note-->
+      <div class="course-inclusions-container">
+        <div class="course-inclusions">
+          <h3>Course Inclusions</h3>
+          <ul>
+            <li>📄 Handouts</li>
+            <li>📚 Training Materials</li>
+            <li>🍪 Snacks and Drinks</li>
+            <li>📜 Certificate of Training</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="training-note">
+        <p><strong>Note:</strong> For specific Corporate NDT Training requirements, please call us now!</p>
+      </div>
+
+
+
+
+
+      <!-- Modals for Popup details -->
+      <!-- Modal 1 -->
+      <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal1Label">Basic Nondestructive Testing</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                A <strong>Basic Nondestructive Testing (NDT)</strong> course covering
+                <strong>Ultrasonic Testing (UT)</strong>, <strong>Radiographic Testing (RT)</strong>,
+                <strong>Magnetic Particle Testing (MT)</strong>, and <strong>Liquid Penetrant Testing (PT)</strong>.
+                This course provides fundamental knowledge and practical skills for inspecting materials without causing
+                damage.
+              </p>
+
+              <p>
+                UT uses high-frequency sound waves to detect internal flaws, while RT employs X-rays or gamma rays to
+                create images of internal structures.
+                MT is effective for identifying surface and near-surface defects in ferromagnetic materials, and PT
+                involves applying a liquid dye to reveal surface cracks.
+              </p>
+
+              <p>
+                Industry regulations such as <strong>ASNT, ASTM, and ISO</strong> provide guidelines for testing
+                procedures and certification requirements.
+                Practical training allows students to apply these techniques, analyze test results, and document
+                findings accurately.
+              </p>
+
+              <!-- Training Hours and Days Section -->
+              <hr> <!-- Divider for clarity -->
+              <p class="text-muted">
+                <strong>No. of Training Hours:</strong> 48 hrs <br>
+                <strong>No. of Days:</strong> 6 days
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal2Label">Magnetic Particle Testing & Liquid Penetrant Testing (Level 1 &
+                2)</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                A <strong>Magnetic Particle Testing (MT)</strong> and <strong>Liquid Penetrant Testing (PT)</strong>
+                <strong>Level 1 & Level 2</strong> course provides comprehensive training in these widely used
+                <strong>nondestructive testing (NDT)</strong> methods for detecting surface and near-surface defects in
+                materials.
+              </p>
+
+              <p>
+                At <strong>Level 1</strong>, trainees learn the basic principles, equipment handling, and step-by-step
+                inspection procedures for both techniques. MT involves applying a magnetic field and iron particles
+                to identify flaws in ferromagnetic materials, while PT uses liquid dyes to highlight surface defects
+                in both metallic and non-metallic materials. This level focuses on understanding test techniques,
+                equipment operation, safety procedures, and identifying indications under supervision.
+              </p>
+
+              <p>
+                At <strong>Level 2</strong>, trainees advance their knowledge to independently conduct and interpret
+                tests, evaluate indications, and prepare detailed reports. They gain a deeper understanding of defect
+                characterization, process control, and industry standards such as <strong>ASNT, ASTM, and ISO</strong>.
+              </p>
+
+              <p>
+                For MT, Level 2 training covers techniques like <strong>dry and wet methods</strong>, continuous and
+                residual magnetization, and proper demagnetization procedures. In PT, trainees learn about different
+                <strong>penetrant types</strong>, developer applications, and methods like water-washable and
+                post-emulsifiable penetrants.
+              </p>
+
+              <p>
+                With hands-on practice and theoretical knowledge, certified Level 2 inspectors can supervise Level 1
+                personnel,
+                assess test reliability, and make critical decisions regarding component integrity in industries like
+                <strong>aerospace, manufacturing, and construction</strong>.
+              </p>
+
+              <!-- Training Hours and Days Section -->
+              <hr>
+              <p class="text-muted">
+                <strong>No. of Training Hours:</strong> 32 hrs (Each level) <br>
+                <strong>No. of Days:</strong> 4 days (Each level)
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Modal 3 -->
+      <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal3Label">Ultrasonic Testing (UT) Level 1 & Level 2</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                A <strong>Ultrasonic Testing (UT)</strong> <strong>Level 1 & Level 2</strong> course provides essential
+                training
+                for inspecting materials using high-frequency sound waves to detect internal defects.
+              </p>
+
+              <p>
+                At <strong>Level 1</strong>, trainees learn the fundamental principles of sound wave propagation,
+                transducer operation, and basic flaw detection techniques. They become familiar with ultrasonic
+                equipment, calibration procedures, couplants, and straight and angle beam testing methods.
+                <strong>Level 1 personnel</strong> are trained to follow established procedures, perform inspections
+                under supervision, and identify basic flaw indications, ensuring structural integrity in industries
+                such as aerospace, construction, and manufacturing.
+              </p>
+
+              <p>
+                At <strong>Level 2</strong>, trainees advance their expertise to independently set up and calibrate
+                UT equipment, interpret test results, and evaluate indications for acceptability. This level includes
+                in-depth training on defect characterization, scanning techniques, and industry standards such as
+                <strong>ASNT, ASTM, and ISO</strong>.
+              </p>
+
+              <p>
+                Level 2 technicians also learn about advanced techniques like
+                <strong>Phased Array Ultrasonic Testing (PAUT)</strong> and
+                <strong>Time-of-Flight Diffraction (TOFD)</strong>. With practical training and theoretical knowledge,
+                <strong>Level 2 inspectors</strong> can supervise Level 1 personnel, develop testing procedures, and
+                make
+                critical decisions regarding defect acceptability, playing a crucial role in ensuring material quality
+                and safety.
+              </p>
+
+              <!-- Training Hours and Days Section -->
+              <hr>
+              <p class="text-muted">
+                <strong>No. of Training Hours:</strong> 40 hrs (Each level) <br>
+                <strong>No. of Days:</strong> 5 days (Each level)
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal 4 -->
+      <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal4Label">Radiographic Testing (RT) Level 1 & Level 2</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                A <strong>Radiographic Testing (RT)</strong> <strong>Level 1 & Level 2</strong> course provides
+                specialized training
+                in using <strong>X-rays</strong> and <strong>gamma rays</strong> to inspect internal structures of
+                materials for hidden defects.
+              </p>
+
+              <p>
+                At <strong>Level 1</strong>, trainees learn the fundamental principles of radiation physics,
+                radiographic film processing, and equipment operation. They become familiar with radiation
+                safety protocols, exposure techniques, image quality indicators, and defect recognition.
+                <strong>Level 1 personnel</strong> are trained to follow written procedures, set up radiographic tests,
+                process film or digital images, and identify basic discontinuities under the supervision of a certified
+                <strong>Level 2 inspector</strong>.
+              </p>
+
+              <p>
+                At <strong>Level 2</strong>, trainees advance their skills to independently conduct and interpret
+                radiographic tests,
+                evaluate image quality, and assess defects based on industry standards like <strong>ASNT, ASTM, and
+                  ISO</strong>.
+                They gain expertise in film and digital radiography, exposure calculations, scatter radiation control,
+                and
+                advanced image interpretation.
+              </p>
+
+              <p>
+                <strong>Level 2 personnel</strong> can develop testing procedures, make accept/reject decisions,
+                supervise Level 1 technicians, and ensure compliance with safety regulations. Their expertise is
+                critical in
+                industries such as <strong>aerospace, oil & gas, and manufacturing</strong>, where detecting internal
+                flaws
+                in welds, castings, and pipelines ensures structural integrity and operational safety.
+              </p>
+
+              <!-- Training Hours and Days Section -->
+              <hr>
+              <p class="text-muted">
+                <strong>No. of Training Hours:</strong> 40 hrs (Each level)<br>
+                <strong>No. of Days:</strong> 5 days (Each level)
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Modal 5 -->
+      <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal5Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modal5Label">Radiographic Testing (RT) Film Interpretation Level 1 & Level 2
+              </h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                A <strong>Radiographic Testing (RT) Film Interpretation</strong> <strong>Level 1 & Level 2</strong>
+                course focuses
+                on developing the skills needed to analyze and interpret radiographic images for detecting internal
+                defects in materials.
+              </p>
+
+              <p>
+                At <strong>Level 1</strong>, trainees learn the fundamentals of radiographic principles,
+                image formation, and defect identification. They gain knowledge of film processing, exposure
+                techniques, contrast and density evaluation, and the effects of scatter radiation.
+                <strong>Level 1 personnel</strong> are trained to recognize basic discontinuities, such as
+                porosity, cracks, and inclusions, while following established procedures and working under
+                the supervision of a certified <strong>Level 2 inspector</strong>.
+              </p>
+
+              <p>
+                At <strong>Level 2</strong>, trainees build on their foundational knowledge to independently assess
+                radiographic films, interpret complex indications, and make accept/reject decisions based on industry
+                standards such as <strong>ASNT, ASTM, and ISO</strong>. This level covers advanced image analysis
+                techniques,
+                sensitivity evaluation, and defect characterization in welds, castings, and forgings.
+              </p>
+
+              <p>
+                <strong>Level 2 personnel</strong> are responsible for verifying film quality, ensuring compliance
+                with radiographic acceptance criteria, and supervising Level 1 technicians. Their expertise is critical
+                in industries like <strong>aerospace, oil & gas, and construction</strong>, where accurate
+                interpretation
+                of radiographic images ensures the safety and reliability of critical components.
+              </p>
+
+              <!-- Training Hours and Days Section -->
+              <hr>
+              <p class="text-muted">
+                <strong>No. of Training Hours:</strong> 40 hrs <br>
+                <strong>No. of Days:</strong> 5 days
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="container">
+        <hr class="featurette-divider">
+        <h1 class="training-courses-title">OFFERED SERVICES</h1>
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7 text-md-start text-center">
+            <h2 class="featurette-heading">Testing</h2>
+            <p class="lead">
+              Third Party and Client Representatives for Nondestructive Testing. Ultrasonic Testing, Liquid
+              Penetrant
+              Testing and Magnetic Particle Testing.
+            </p>
+          </div>
+          <div class="col-md-5 text-center">
+            <img src="services/feature1.jpg" class="featurette-image img-fluid" alt="Testing Service">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7 order-md-2 text-md-start text-center">
+            <h2 class="featurette-heading">Consultancy</h2>
+            <p class="lead">
+              Set-up and develop in-house nondestructive testing and inspection capability. Prepare test procedures
+              and
+              work instructions. Conduct technical assessment of nondestructive testing personnel for employment
+              local
+              and abroad.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1 text-center">
+            <img src="services/feature2.jpg" class="featurette-image img-fluid" alt="Consultancy Service">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette align-items-center">
+          <div class="col-md-7 text-md-start text-center">
+            <h2 class="featurette-heading">Audit</h2>
+            <p class="lead">
+              Audit in compliance with the requirements of clients, third party certification, and due diligence.
+            </p>
+          </div>
+          <div class="col-md-5 text-center">
+            <img src="services/feature3.jpg" class="featurette-image img-fluid" alt="Audit Service">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+      </div>
+
+    </div>
+
+  </div>
+  <!-- END DIV container.marketing -->
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-section about">
+        <h3>About Us</h3>
+        <p>AES exists to deliver quality Nondestructive Testing (NDT) services to individual and corporate clients.
+        </p>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p><strong>Email:</strong><a href="https://mail.google.com/mail/?view=cm&fs=1&to=contacts.apex@gmail.com"
+            target="_blank">
+            contacts.apex@gmail.com
+          </a></p>
+        <p><strong>Phone:</strong> +63920-981-5861 / +63917-622-2184</p>
+
+        <!-- Address Link (Clickable) -->
+        <p>
+          <strong>Address:</strong>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#addressModal">
+            Primrose Building, Rose Avenue, Pilar Village, Las Piñas City 1750
+          </a>
+        </p>
+
+        <!-- Bootstrap Modal -->
+        <div class="modal fade" id="addressModal" tabindex="-1" aria-labelledby="addressModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="addressModalLabel">Our Location</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="services/aeslocmap.jpg" alt="Our Address" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <a href="https://web.facebook.com/apexAES" target="_blank">
+          <img src="logos/fb-logo.png" alt="Facebook" class="social-icon">
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>&copy; 2005–2025 Company.</p>
+      <p><a href="#" class="back-to-top">Back to top</a></p>
+    </div>
+  </footer>
+  </div>
+
+  </main>
+
+  <!-- Dark mode features -->
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme">
+      <i id="theme-icon" class="bi bi-circle-half theme-icon-active"></i>
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
+          <i class="bi bi-sun-fill me-2 opacity-50"></i>
+          Light
+          <i class="bi bi-check2 ms-auto d-none"></i>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
+          <i class="bi bi-moon-stars-fill me-2 opacity-50"></i>
+          Dark
+          <i class="bi bi-check2 ms-auto d-none"></i>
+        </button>
+      </li>
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto">
+          <i class="bi bi-circle-half me-2 opacity-50"></i>
+          Auto
+          <i class="bi bi-check2 ms-auto d-none"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  </main>
+
+  <!-- END-->
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,383 @@
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    flex: 1; /* Ensures main content expands */
+    padding-top: 60px; /* Adjust based on navbar height */
+}
+
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+    z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+    display: block !important;
+}
+
+.divider {
+    display: inline-block;
+    width: 2px;
+    /* Gaano kakapal ang divider */
+    height: 35px;
+    /* Gaano kahaba ang divider */
+    background-color: white;
+    /* Kulay ng divider */
+    margin: 0 10px;
+    /* Espasyo sa kaliwa't kanan */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1020;
+    background-color: #000080 !important;
+}
+
+
+.navbar.bg-dark {
+    background-color: #000080 !important;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00FFFF;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00FFFF !important;
+}
+
+.navbar-brand img {
+    height: 30px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.nav-btn {
+    padding: 6px 18px;
+    margin-right: 12px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+
+/*new*/
+.centered-text {
+    display: flex;
+    font-family: arial;
+    font-weight: bold;
+    font-size: large;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+/* Gallery Masonry Layout */
+.gallery-container {
+    column-count: 3;
+    /* Creates 3 columns */
+    column-gap: 15px;
+    /* Spacing between images */
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/* Gallery Images */
+.gallery-container img {
+    width: 100%;
+    /* Makes images fit within the columns */
+    margin-bottom: 15px;
+    /* Space between images */
+    border-radius: 10px;
+    /* Smooth rounded corners */
+    display: block;
+    break-inside: avoid;
+    /* Prevents images from breaking into new columns */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.gallery-container img:hover {
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    /* Shadow effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gallery-container {
+        column-count: 2;
+        /* Two columns on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        column-count: 1;
+        /* Single column on mobile */
+    }
+}
+
+
+/* Training Courses Title */
+.training-courses-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 50px;
+}
+
+
+
+/* Footer Styling */
+.custom-footer {
+    background: #000080;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative; /* Panatilihin ito sa tamang lugar */
+    width: 100%;
+    min-height: 100px; /* Siguraduhin na hindi ito lumiliit */
+    bottom: 0;
+}
+
+
+/* Para maiwasan ang extra space */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center; /* Para pantay ang height */
+    padding: 0 15px;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 10px; /* Bawasan ang space */
+    padding: 10px; /* Para hindi dikit-dikit */
+}
+
+/* Title Styling */
+.footer-section h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/* Text Styling */
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.4; /* Bawasan ang taas ng linya */
+    margin: 0; /* Alisin ang extra space */
+}
+
+/* Links Styling */
+.footer-section a {
+    color: #f8f9fa;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+/* Hover Effect */
+.footer-section a:hover {
+    color: #00bfff;
+}
+
+/* Social Icons */
+.social-icon {
+    width: 35px;
+    height: auto;
+    transition: 0.3s;
+    background: white;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Icon Hover */
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 0; /* Bawasan ang padding */
+    font-size: 14px;
+    margin-top: 10px; /* Para hindi masyadong dikit */
+}
+
+
+/* Modal Customization */
+.modal-dialog {
+    max-width: 800px;
+}
+
+/* Modal Content - Rounded Corners at Shadow */
+.modal-content {
+  border-radius: 15px; /* Medyo bilugan ang gilid */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Modal Header - Custom Background */
+.modal-header {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border-top-left-radius: 15px; /* Bilugan ang upper corners */
+  border-top-right-radius: 15px;
+}
+
+/* Modal Title - Centered */
+.modal-title {
+  font-weight: bold;
+  text-align: center;
+  flex-grow: 1; /* Para sentro */
+}
+
+/* Close Button - White */
+.modal-header .btn-close {
+  filter: invert(1); /* Ginawang white ang close button */
+}
+
+/* Image Styling - Soft Border & Shadow */
+.modal-body img {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Dark Mode Support */
+:root {
+    --h1-light-color: #000;
+    /* Kulay ng h1 sa Light Mode */
+    --h1-dark-color: #d1d1d1;
+    /* Kulay ng h1 sa Dark Mode */
+}
+
+[data-bs-theme="light"] .training-courses-title {
+    color: var(--h1-light-color);
+}
+
+[data-bs-theme="dark"] .training-courses-title {
+    color: var(--h1-dark-color);
+}

@@ -1,0 +1,141 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: rgb(var(--bs-tertiary-color-rgb));
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+/* CUSTOMIZE THE CAROUSEL */
+.carousel {
+  width: 100%;
+  max-width: 1600px;
+  /* Para hindi lumampas sa malaking screen */
+  margin: auto;
+  /* Center carousel */
+}
+
+/* Ayusin ang carousel item */
+.carousel-item {
+  height: auto;
+  /* Hahayaan mag-adjust based sa image */
+}
+
+/* Ayusin ang carousel image */
+.carousel-item img {
+  width: 100%;
+  /* Para sakto lagi sa container */
+  height: auto;
+  /* Default height sa desktop */
+  max-height: 680px;
+  object-fit: cover;
+  /* Para hindi ma-distort ang image */
+}
+
+/* Para hindi lumayo ang button sa carousel */
+.carousel-caption {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+}
+
+/* Gawing mas responsive ang button */
+.carousel-caption a.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+  letter-spacing: -.05rem;
+}
+
+/* rtl:end:remove */
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* Media Query para sa mas maliit na screen */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 60vh;
+    /* Mas maliit para sa mobile */
+    max-height: 400px;
+    /* Para hindi sobrang laki sa maliit na screen */
+  }
+
+  .carousel-caption {
+    bottom: 4%;
+    /* Para hindi matakpan */
+    width: 90%;
+  }
+}
+
+
+
+/* Para sa extra small screen (e.g. iPhone SE) */
+@media (max-width: 480px) {
+  .carousel-item img {
+    height: 50vh;
+    /* Mas maliit pa sa iPhone SE */
+    max-height: 300px;
+  }
+
+  .carousel-caption {
+    bottom: 4%;
+    /* Para hindi matakpan */
+    width: 90%;
+  }
+
+
+  .carousel-caption a.btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+}
