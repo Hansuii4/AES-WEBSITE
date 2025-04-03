@@ -308,6 +308,8 @@
 .course-inclusions ul li {
     padding: 8px 0;
     font-size: 18px;
+    list-style-type: none;
+    padding-left: 0; /* Remove default padding */
 }
 
 /* Training Note */
