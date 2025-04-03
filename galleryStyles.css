@@ -105,20 +105,7 @@ main {
     /* Espasyo sa kaliwa't kanan */
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1020;
-    background-color: #000080 !important;
-}
-
-
-.navbar.bg-dark {
-    background-color: #000080 !important;
-}
-
+/* Default light mode styles */
 .navbar-nav .nav-link {
     position: relative;
     color: #ffffff !important;
@@ -168,6 +155,12 @@ main {
     text-decoration: none;
 }
 
+.nav-btn.active {
+    background-color: #ffffff;
+    color: #0d6efd !important;
+    border-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 /*new*/
 .centered-text {
