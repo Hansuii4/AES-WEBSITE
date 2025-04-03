@@ -105,6 +105,17 @@ main {
     /* Espasyo sa kaliwa't kanan */
 }
 
+/* Default navbar settings */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Para manatili sa ibabaw ng ibang elements */
+}
+  
+.navbar.bg-dark {
+    background-color: #000080 !important;
+}
+
 /* Default light mode styles */
 .navbar-nav .nav-link {
     position: relative;
